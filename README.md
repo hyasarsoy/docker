@@ -1,7 +1,8 @@
 ## Docker yml files
 
-#Ngnix config 
+Ngnix config 
 
+```
 location / {
     proxy_pass http://192.168.123.123:8080/guacamole/;
     proxy_buffering off;
@@ -12,3 +13,4 @@ location / {
     proxy_cookie_path /guacamole/ /;
     access_log off;
 }
+```
